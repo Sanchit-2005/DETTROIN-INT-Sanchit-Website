@@ -1,0 +1,1 @@
+console.log("basic website is  Loaded Successfully");
