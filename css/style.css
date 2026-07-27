@@ -1384,3 +1384,758 @@ url("../images/hero.jpg");
 }
 
 }
+
+
+/* ==========================================
+            FACILITIES SECTION
+========================================== */
+
+.facilities-section{
+    padding:120px 0;
+    background:#ffffff;
+}
+
+.facilities-section .container{
+
+    background:#f7f9fc;
+
+    border-radius:35px;
+
+    padding:60px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.05);
+
+}
+
+/* ===========================
+        Header
+=========================== */
+
+.facilities-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    margin-bottom:60px;
+
+    gap:30px;
+
+}
+
+.facilities-header h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin:15px 0;
+
+}
+
+.facilities-header p{
+
+    color:#6b7280;
+
+    max-width:650px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+        View Button
+=========================== */
+
+.view-all-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.view-all-btn:hover{
+
+    background:#1d4ed8;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+        Cards Grid
+=========================== */
+
+.facilities-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+/* ===========================
+        Card
+=========================== */
+
+.facility-card{
+
+    position:relative;
+
+    height:470px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.45s;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.facility-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+/* ===========================
+        Overlay
+=========================== */
+
+.facility-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        rgba(0,0,0,.05),
+
+        rgba(0,0,0,.75)
+
+    );
+
+}
+
+/* ===========================
+        Content
+=========================== */
+
+.facility-content{
+
+    position:absolute;
+
+    left:25px;
+
+    right:25px;
+
+    bottom:25px;
+
+    z-index:5;
+
+}
+
+.facility-number{
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    color:#ffffff;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.facility-content h3{
+
+    color:white;
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.facility-content p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+        Arrow Button
+=========================== */
+
+.facility-content button{
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#2563EB;
+
+    font-size:18px;
+
+    transition:.35s;
+
+}
+
+
+/* ==========================================
+        FACILITY HOVER EFFECTS
+========================================== */
+
+.facility-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 35px 70px rgba(37,99,235,.18),
+        0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.facility-card:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.facility-card:hover .facility-overlay{
+
+    background:linear-gradient(
+
+        rgba(0,0,0,.10),
+
+        rgba(0,0,0,.82)
+
+    );
+
+}
+
+.facility-card:hover .facility-content{
+
+    transform:translateY(-8px);
+
+}
+
+.facility-content{
+
+    transition:.4s ease;
+
+}
+
+/* ==========================================
+        ARROW BUTTON
+========================================== */
+
+.facility-content button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.facility-content button:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:rotate(-45deg) scale(1.1);
+
+}
+
+/* ==========================================
+        NUMBER ANIMATION
+========================================== */
+
+.facility-number{
+
+    opacity:.85;
+
+    transition:.35s;
+
+}
+
+.facility-card:hover .facility-number{
+
+    letter-spacing:4px;
+
+    color:#60A5FA;
+
+}
+
+/* ==========================================
+        TITLE
+========================================== */
+
+.facility-content h3{
+
+    transition:.35s;
+
+}
+
+.facility-card:hover h3{
+
+    color:#60A5FA;
+
+}
+
+/* ==========================================
+        IMAGE RADIUS
+========================================== */
+
+.facility-card img{
+
+    border-radius:28px;
+
+}
+
+/* ==========================================
+        VIEW ALL BUTTON
+========================================== */
+
+.view-all-btn i{
+
+    transition:.35s;
+
+}
+
+.view-all-btn:hover i{
+
+    transform:translateX(5px);
+
+}
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+
+@media (max-width:1200px){
+
+.facilities-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.facilities-section .container{
+
+    padding:35px;
+
+}
+
+.facilities-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.facilities-header h2{
+
+    font-size:2.3rem;
+
+}
+
+.facilities-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.facility-card{
+
+    height:420px;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.facilities-section{
+
+    padding:80px 0;
+
+}
+
+.facilities-header h2{
+
+    font-size:2rem;
+
+}
+
+.facilities-header p{
+
+    font-size:.95rem;
+
+}
+
+.facility-card{
+
+    height:360px;
+
+}
+
+.facility-content h3{
+
+    font-size:1.4rem;
+
+}
+
+.facility-content p{
+
+    font-size:.9rem;
+
+}
+
+}
+
+
+/*=============================
+    ACHIEVEMENT SECTION
+==============================*/
+
+.achievement-banner{
+
+    padding:100px 0 160px;
+
+    background:#ffffff;
+
+    position:relative;
+
+}
+
+.achievement-heading{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.achievement-heading span{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.achievement-heading h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    margin:15px 0;
+
+}
+
+.achievement-heading p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#64748b;
+
+    line-height:1.8;
+
+}
+
+/* Background Image */
+
+.achievement-image{
+
+    width:100%;
+
+    height:420px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.achievement-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    filter:brightness(.55);
+
+}
+
+/* Cards */
+
+.achievement-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+   margin-top:-45px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.achievement-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.achievement-card i{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    margin:auto;
+
+}
+
+.achievement-card h3{
+
+    font-size:3rem;
+
+    color:#2563EB;
+
+    margin-top:25px;
+
+    font-weight:800;
+
+}
+
+.achievement-card h3::after{
+
+    content:"+";
+
+}
+
+.achievement-card p{
+
+    margin-top:10px;
+
+    color:#64748b;
+
+    font-size:18px;
+
+}
+
+.achievement-banner{
+    position: relative;
+    padding: 100px 0 180px;
+    background: #fff;
+}
+
+.achievement-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.achievement-heading span{
+    color:#2563EB;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.achievement-heading h2{
+    font-size:3.5rem;
+    font-weight:800;
+    margin:15px 0;
+}
+
+.achievement-heading p{
+    color:#64748b;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+.achievement-image{
+
+    width:90%;
+    height:320px;
+
+    margin:auto;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+}
+
+.achievement-image img{
+
+  width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#f4f4f4;
+
+}
+
+.achievement-card{
+    background:#fff;
+    border-radius:20px;
+    padding:22px 18px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+    transition:.35s;
+    min-height:220px;
+}
+
+.achievement-card i{
+    width:60px;
+    height:60px;
+    font-size:22px;
+    margin:auto;
+}
+
+.achievement-card h3{
+    margin-top:18px;
+    font-size:2.4rem;
+    font-weight:800;
+    color:#2563EB;
+}
+
+.achievement-card p{
+    margin-top:8px;
+    font-size:1rem;
+    color:#64748b;
+}
+
+@media(max-width:992px){
+
+.achievement-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+width:90%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.achievement-cards{
+
+grid-template-columns:1fr;
+
+width:90%;
+
+}
+
+.achievement-image{
+
+height:220px;
+
+}
+
+}

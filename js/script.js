@@ -246,3 +246,53 @@ setInterval(() => {
 ================================ */
 
 updateGallery();
+
+
+
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            counters.forEach(counter=>{
+
+                const target = +counter.dataset.target;
+
+                let count = 0;
+
+                const speed = target/100;
+
+                function update(){
+
+                    count += speed;
+
+                    if(count < target){
+
+                        counter.innerText = Math.ceil(count);
+
+                        requestAnimationFrame(update);
+
+                    }else{
+
+                        counter.innerText = target;
+
+                    }
+
+                }
+
+                update();
+
+            });
+
+            observer.disconnect();
+
+        }
+
+    });
+
+});
+
+observer.observe(document.querySelector(".achievement-banner"));
