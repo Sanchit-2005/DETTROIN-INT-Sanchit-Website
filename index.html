@@ -1,984 +1,1097 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Pavna School</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- ================= NAVBAR ================= -->
 
     <header class="sticky-top py-3">
+      <div class="container d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg breathing-navbar">
+          <div class="container-fluid">
+            <!-- Logo -->
 
-        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="Pavna School Logo" class="logo" />
+            </a>
 
-            <nav class="navbar navbar-expand-lg breathing-navbar">
+            <!-- Mobile Button -->
 
-                <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <!-- Logo -->
+            <!-- Menu -->
 
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" alt="Pavna School Logo" class="logo">
-                    </a>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
 
-                    <!-- Mobile Button -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
 
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbar">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Academics</a>
+                </li>
 
-                        <span class="navbar-toggler-icon"></span>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
 
-                    </button>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
 
-                    <!-- Menu -->
-
-                    <div class="collapse navbar-collapse" id="navbar">
-
-                        <ul class="navbar-nav mx-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Academics</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="btn btn-primary rounded-pill px-4">
-                            Admission
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </nav>
-
-        </div>
-
+              <a href="#" class="btn btn-primary rounded-pill px-4">
+                Admission
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- ================= HERO SECTION ================= -->
 
     <section class="hero">
+      <div class="hero-overlay"></div>
 
-        <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-7">
+            <span class="hero-tag"> ⭐ Admissions Open 2026-27 </span>
 
-        <div class="container hero-content">
+            <h1 class="hero-title mt-4">
+              Building Future Leaders Through
 
-            <div class="row align-items-center min-vh-100">
+              <span>Quality Education</span>
+            </h1>
 
-                <div class="col-lg-7">
+            <p class="hero-description">
+              Pavna School nurtures creativity, confidence and academic
+              excellence through innovative learning and holistic development.
+            </p>
 
-                    <span class="hero-tag">
-                        ⭐ Admissions Open 2026-27
-                    </span>
+            <div class="hero-buttons">
+              <a href="#" class="btn hero-btn-primary"> Apply Now </a>
 
-                    <h1 class="hero-title mt-4">
-
-                        Building Future Leaders Through
-
-                        <span>Quality Education</span>
-
-                    </h1>
-
-                    <p class="hero-description">
-
-                        Pavna School nurtures creativity,
-                        confidence and academic excellence
-                        through innovative learning and
-                        holistic development.
-
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#" class="btn hero-btn-primary">
-
-                            Apply Now
-
-                        </a>
-
-                        <a href="#" class="btn hero-btn-secondary">
-
-                            Explore Campus
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+              <a href="#" class="btn hero-btn-secondary"> Explore Campus </a>
             </div>
-
+          </div>
         </div>
+      </div>
 
-        <!-- Floating Cards -->
+      <!-- Floating Cards -->
 
-        <div class="floating-card card-one">
+      <div class="floating-card card-one">
+        <h3>1500+</h3>
 
-            <h3>1500+</h3>
+        <p>Students</p>
+      </div>
 
-            <p>Students</p>
+      <div class="floating-card card-two">
+        <h3>28+</h3>
 
-        </div>
+        <p>Years of Excellence</p>
+      </div>
+      <div class="floating-card card-three">
+        <h3>100%</h3>
 
-        <div class="floating-card card-two">
-
-            <h3>28+</h3>
-
-            <p>Years of Excellence</p>
-
-        </div>
-        <div class="floating-card card-three">
-
-    <h3>100%</h3>
-
-    <p>Smart Classes</p>
-
-</div>
-
+        <p>Smart Classes</p>
+      </div>
     </section>
 
     <!-- ==========================================
         WHY CHOOSE PAVNA SCHOOL
 ========================================== -->
 
-<section class="why-us">
-
-    <div class="container">
-
+    <section class="why-us">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag"> WHY CHOOSE US </span>
 
-            <span class="section-tag">
-                WHY CHOOSE US
-            </span>
+          <h2>Excellence Beyond Academics</h2>
 
-            <h2>
-                Excellence Beyond Academics
-            </h2>
-
-            <p>
-                We nurture curiosity, creativity and confidence through
-                world-class education and a student-centered learning
-                environment.
-            </p>
-
+          <p>
+            We nurture curiosity, creativity and confidence through world-class
+            education and a student-centered learning environment.
+          </p>
         </div>
 
         <!-- Row 1 -->
 
         <div class="row align-items-center gy-5 why-row">
+          <div class="col-lg-6">
+            <img
+              src="images/faculty.png"
+              class="why-image"
+              alt="Expert Faculty"
+            />
+          </div>
 
-            <div class="col-lg-6">
+          <div class="col-lg-6">
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
 
-                <img src="images/faculty.png"
-                     class="why-image"
-                     alt="Expert Faculty">
+              <h3>Expert Faculty</h3>
 
+              <p>
+                Our experienced educators inspire students through innovative
+                teaching methods, individual attention, and academic excellence.
+              </p>
             </div>
-
-            <div class="col-lg-6">
-
-                <div class="why-card">
-
-                    <div class="why-icon">
-                        <i class="fa-solid fa-user-graduate"></i>
-                    </div>
-
-                    <h3>Expert Faculty</h3>
-
-                    <p>
-
-                        Our experienced educators inspire students through
-                        innovative teaching methods, individual attention,
-                        and academic excellence.
-
-                    </p>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
 
         <!-- Row 2 -->
 
         <div class="row align-items-center gy-5 why-row flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <img
+              src="images/smart-class.jpg"
+              class="why-image"
+              alt="Smart Classes"
+            />
+          </div>
 
-            <div class="col-lg-6">
+          <div class="col-lg-6">
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fa-solid fa-laptop"></i>
+              </div>
 
-                <img src="images/smart-class.jpg"
-                     class="why-image"
-                     alt="Smart Classes">
+              <h3>Smart Classrooms</h3>
 
+              <p>
+                Interactive digital classrooms make learning more engaging,
+                collaborative and enjoyable.
+              </p>
             </div>
-
-            <div class="col-lg-6">
-
-                <div class="why-card">
-
-                    <div class="why-icon">
-                        <i class="fa-solid fa-laptop"></i>
-                    </div>
-
-                    <h3>Smart Classrooms</h3>
-
-                    <p>
-
-                        Interactive digital classrooms make learning more
-                        engaging, collaborative and enjoyable.
-
-                    </p>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
 
         <!-- Row 3 -->
 
         <div class="row align-items-center gy-5 why-row">
+          <div class="col-lg-6">
+            <img src="images/sports.jpg" class="why-image" alt="Sports" />
+          </div>
 
-            <div class="col-lg-6">
+          <div class="col-lg-6">
+            <div class="why-card">
+              <div class="why-icon">
+                <i class="fa-solid fa-futbol"></i>
+              </div>
 
-                <img src="images/sports.jpg"
-                     class="why-image"
-                     alt="Sports">
+              <h3>Sports & Activities</h3>
 
+              <p>
+                We encourage every child to participate in sports, arts, music
+                and leadership programs for holistic development.
+              </p>
             </div>
-
-            <div class="col-lg-6">
-
-                <div class="why-card">
-
-                    <div class="why-icon">
-                        <i class="fa-solid fa-futbol"></i>
-                    </div>
-
-                    <h3>Sports & Activities</h3>
-
-                    <p>
-
-                        We encourage every child to participate in sports,
-                        arts, music and leadership programs for holistic
-                        development.
-
-                    </p>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
 
         <!-- Row 4 -->
+      </div>
+    </section>
 
-    
-
-    </div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
                 ABOUT SECTION
 ========================================== -->
 
-<section class="about">
-
-    <div class="container">
-
+    <section class="about">
+      <div class="container">
         <div class="row align-items-center g-5">
+          <!-- Left Image -->
 
-            <!-- Left Image -->
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img src="images/about.jpg" alt="Pavna School" />
 
-            <div class="col-lg-6">
+              <div class="experience-box">
+                <h2>28+</h2>
 
-                <div class="about-image">
+                <p>Years of Excellence</p>
+              </div>
+            </div>
+          </div>
 
-                    <img src="images/about.jpg" alt="Pavna School">
+          <!-- Right Content -->
 
-                    <div class="experience-box">
+          <div class="col-lg-6">
+            <span class="section-tag"> ABOUT PAVNA SCHOOL </span>
 
-                        <h2>28+</h2>
+            <h2 class="about-title">
+              Inspiring Young Minds, Building Bright Futures
+            </h2>
 
-                        <p>Years of Excellence</p>
+            <p class="about-text">
+              Pavna School is committed to nurturing confident, responsible and
+              future-ready learners through academic excellence, innovation and
+              holistic development. Our experienced educators and modern
+              infrastructure provide students with the perfect environment to
+              learn and grow.
+            </p>
 
-                    </div>
+            <div class="about-list">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                CBSE Curriculum
+              </div>
 
-                </div>
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Smart Classrooms
+              </div>
 
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Experienced Faculty
+              </div>
+
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Sports & Co-Curricular Activities
+              </div>
+
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Safe & Secure Campus
+              </div>
+
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+                Modern Laboratories
+              </div>
             </div>
 
-            <!-- Right Content -->
-
-            <div class="col-lg-6">
-
-                <span class="section-tag">
-                    ABOUT PAVNA SCHOOL
-                </span>
-
-                <h2 class="about-title">
-
-                    Inspiring Young Minds,
-                    Building Bright Futures
-
-                </h2>
-
-                <p class="about-text">
-
-                    Pavna School is committed to nurturing confident,
-                    responsible and future-ready learners through
-                    academic excellence, innovation and holistic
-                    development. Our experienced educators and
-                    modern infrastructure provide students with
-                    the perfect environment to learn and grow.
-
-                </p>
-
-                <div class="about-list">
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        CBSE Curriculum
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Smart Classrooms
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Experienced Faculty
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Sports & Co-Curricular Activities
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Safe & Secure Campus
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Modern Laboratories
-                    </div>
-
-                </div>
-
-                <a href="#" class="about-btn">
-
-                    Learn More
-                    <i class="fa-solid fa-arrow-right ms-2"></i>
-
-                </a>
-
-            </div>
-
+            <a href="#" class="about-btn">
+              Learn More
+              <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
                 GALLERY SECTION
 ========================================== -->
 
-<section class="gallery-section" id="gallery">
-
-    <div class="container">
-
+    <section class="gallery-section" id="gallery">
+      <div class="container">
         <!-- Heading -->
 
         <div class="gallery-heading">
+          <span class="section-tag"> GALLERY </span>
 
-            <span class="section-tag">
-                GALLERY
-            </span>
+          <h2>Life at Pavna School</h2>
 
-            <h2>Life at Pavna School</h2>
-
-            <p>
-                Discover our vibrant campus, innovative classrooms,
-                exciting events and memorable student experiences.
-            </p>
-
+          <p>
+            Discover our vibrant campus, innovative classrooms, exciting events
+            and memorable student experiences.
+          </p>
         </div>
 
         <!-- Category Buttons -->
 
         <div class="gallery-filter">
+          <button class="active" data-category="campus">Campus</button>
 
-            <button class="active" data-category="campus">
-                Campus
-            </button>
+          <button data-category="academics">Academics</button>
 
-            <button data-category="academics">
-                Academics
-            </button>
+          <button data-category="sports">Sports</button>
 
-            <button data-category="sports">
-                Sports
-            </button>
+          <button data-category="events">Events</button>
 
-            <button data-category="events">
-                Events
-            </button>
+          <button data-category="labs">Laboratories</button>
 
-            <button data-category="labs">
-                Laboratories
-            </button>
-
-            <button data-category="library">
-                Library
-            </button>
-
+          <button data-category="library">Library</button>
         </div>
 
         <!-- Gallery Slider -->
 
         <div class="gallery-wrapper">
+          <!-- Previous Button -->
 
-            <!-- Previous Button -->
+          <button class="gallery-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-            <button class="gallery-btn prev">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
+          <div class="gallery-slider">
+            <!-- Left Preview -->
 
-            <div class="gallery-slider">
+            <div class="gallery-card side left">
+              <img src="images/campus1.jpg" alt="Previous Image" />
 
-                <!-- Left Preview -->
-
-                <div class="gallery-card side left">
-
-                    <img src="images/campus1.jpg" alt="Previous Image">
-
-                    <div class="gallery-info">
-                        <h4 id="left-title">Campus</h4>
-                    </div>
-
-                </div>
-
-                <!-- Active Image -->
-
-                <div class="gallery-card active">
-
-                    <img src="images/campus2.jpg" alt="Current Image">
-
-                    <div class="gallery-info">
-                        <h4 id="center-title">Smart Classroom</h4>
-                    </div>
-
-                </div>
-
-                <!-- Right Preview -->
-
-                <div class="gallery-card side right">
-
-                    <img src="images/campus3.jpg" alt="Next Image">
-
-                    <div class="gallery-info">
-                        <h4 id="right-title">Science Lab</h4>
-                    </div>
-
-                </div>
-
+              <div class="gallery-info">
+                <h4 id="left-title">Campus</h4>
+              </div>
             </div>
 
-            <!-- Next Button -->
+            <!-- Active Image -->
 
-            <button class="gallery-btn next">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+            <div class="gallery-card active">
+              <img src="images/campus2.jpg" alt="Current Image" />
 
+              <div class="gallery-info">
+                <h4 id="center-title">Smart Classroom</h4>
+              </div>
+            </div>
+
+            <!-- Right Preview -->
+
+            <div class="gallery-card side right">
+              <img src="images/campus3.jpg" alt="Next Image" />
+
+              <div class="gallery-info">
+                <h4 id="right-title">Science Lab</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next Button -->
+
+          <button class="gallery-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
 
         <!-- Bottom Navigation -->
 
         <div class="gallery-navigation">
+          <button class="nav-btn prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
 
-            <button class="nav-btn prev">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
-
-            <button class="nav-btn next">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-
+          <button class="nav-btn next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
             FACILITIES SECTION
 ========================================== -->
 
-<section class="facilities-section" id="facilities">
-
-    <div class="container">
-
+    <section class="facilities-section" id="facilities">
+      <div class="container">
         <!-- Heading -->
 
         <div class="facilities-header">
+          <div>
+            <span class="section-tag"> FACILITIES </span>
 
-            <div>
+            <h2>Explore Our Facilities</h2>
 
-                <span class="section-tag">
-                    FACILITIES
-                </span>
+            <p>
+              World-class infrastructure designed to inspire learning,
+              creativity, innovation and holistic development.
+            </p>
+          </div>
 
-                <h2>
-                    Explore Our Facilities
-                </h2>
+          <a href="#" class="view-all-btn">
+            View All
 
-                <p>
-                    World-class infrastructure designed to inspire learning,
-                    creativity, innovation and holistic development.
-                </p>
-
-            </div>
-
-            <a href="#" class="view-all-btn">
-
-                View All
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
-
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
 
         <!-- Cards -->
 
         <div class="facilities-grid">
+          <!-- Card 1 -->
 
-            <!-- Card 1 -->
+          <div class="facility-card">
+            <img src="images/facility1.jpg" alt="Smart Classroom" />
 
-            <div class="facility-card">
+            <div class="facility-overlay"></div>
 
-                <img src="images/facility1.jpg" alt="Smart Classroom">
+            <div class="facility-content">
+              <span class="facility-number"> 01 </span>
 
-                <div class="facility-overlay"></div>
+              <h3>Smart Classrooms</h3>
 
-                <div class="facility-content">
+              <p>
+                Digital learning spaces equipped with interactive boards and
+                modern teaching technology.
+              </p>
 
-                    <span class="facility-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Smart Classrooms
-                    </h3>
-
-                    <p>
-                        Digital learning spaces equipped with interactive boards
-                        and modern teaching technology.
-                    </p>
-
-                    <button>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+              <button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
+          </div>
 
-            <!-- Card 2 -->
+          <!-- Card 2 -->
 
-            <div class="facility-card">
+          <div class="facility-card">
+            <img src="images/facility2.jpg" alt="Science Lab" />
 
-                <img src="images/facility2.jpg" alt="Science Lab">
+            <div class="facility-overlay"></div>
 
-                <div class="facility-overlay"></div>
+            <div class="facility-content">
+              <span class="facility-number"> 02 </span>
 
-                <div class="facility-content">
+              <h3>Science Laboratories</h3>
 
-                    <span class="facility-number">
-                        02
-                    </span>
+              <p>
+                Fully equipped Physics, Chemistry and Biology labs encouraging
+                hands-on learning.
+              </p>
 
-                    <h3>
-                        Science Laboratories
-                    </h3>
-
-                    <p>
-                        Fully equipped Physics, Chemistry and Biology labs
-                        encouraging hands-on learning.
-                    </p>
-
-                    <button>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+              <button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
+          </div>
 
-            <!-- Card 3 -->
+          <!-- Card 3 -->
 
-            <div class="facility-card">
+          <div class="facility-card">
+            <img src="images/facility3.jpg" alt="Sports" />
 
-                <img src="images/facility3.jpg" alt="Sports">
+            <div class="facility-overlay"></div>
 
-                <div class="facility-overlay"></div>
+            <div class="facility-content">
+              <span class="facility-number"> 03 </span>
 
-                <div class="facility-content">
+              <h3>Sports Arena</h3>
 
-                    <span class="facility-number">
-                        03
-                    </span>
+              <p>
+                Outdoor and indoor sports facilities promoting teamwork, fitness
+                and leadership.
+              </p>
 
-                    <h3>
-                        Sports Arena
-                    </h3>
-
-                    <p>
-                        Outdoor and indoor sports facilities promoting teamwork,
-                        fitness and leadership.
-                    </p>
-
-                    <button>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+              <button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
+          </div>
 
-            <!-- Card 4 -->
+          <!-- Card 4 -->
 
-            <div class="facility-card">
+          <div class="facility-card">
+            <img src="images/facility4.jpg" alt="Library" />
 
-                <img src="images/facility4.jpg" alt="Library">
+            <div class="facility-overlay"></div>
 
-                <div class="facility-overlay"></div>
+            <div class="facility-content">
+              <span class="facility-number"> 04 </span>
 
-                <div class="facility-content">
+              <h3>Transport</h3>
 
-                    <span class="facility-number">
-                        04
-                    </span>
+              <p>
+                Our transport network covers wide routes across the city,
+                ensuring accessible, punctual, and secure travel for every
+                student every single day.
+              </p>
 
-                    <h3>
-                       Transport
-                    </h3>
-
-                    <p>
-                        Our transport network covers wide routes across the city, ensuring accessible, punctual, and secure travel for every student every single day.
-                    </p>
-
-                    <button>
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+              <button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<section class="achievement-banner">
-
-    <div class="container">
-
+    <section class="achievement-banner">
+      <div class="container">
         <div class="achievement-heading">
+          <span>OUR ACHIEVEMENTS</span>
 
-            <span>OUR ACHIEVEMENTS</span>
+          <h2>Building Future Leaders</h2>
 
-            <h2>Building Future Leaders</h2>
-
-            <p>
-                Over 28 years of excellence in education,
-                empowering students through innovation,
-                discipline and holistic learning.
-            </p>
-
+          <p>
+            Over 28 years of excellence in education, empowering students
+            through innovation, discipline and holistic learning.
+          </p>
         </div>
+      </div>
 
-    </div>
+      <!-- Background Image -->
 
-    <!-- Background Image -->
+      <div class="achievement-image">
+        <img src="images/achievement-bg.jpg" alt="Pavna School" />
+      </div>
 
-    <div class="achievement-image">
+      <!-- Floating Statistics -->
 
-        <img src="images/achievement-bg.jpg" alt="Pavna School">
-
-    </div>
-
-    <!-- Floating Statistics -->
-
-    <div class="container">
-
+      <div class="container">
         <div class="achievement-cards">
+          <div class="achievement-card">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3 class="counter" data-target="1500">0</h3>
+            <p>Students</p>
+          </div>
 
-            <div class="achievement-card">
-                <i class="fa-solid fa-user-graduate"></i>
-                <h3 class="counter" data-target="1500">0</h3>
-                <p>Students</p>
-            </div>
+          <div class="achievement-card">
+            <i class="fa-solid fa-school"></i>
+            <h3 class="counter" data-target="28">0</h3>
+            <p>Years of Excellence</p>
+          </div>
 
-            <div class="achievement-card">
-                <i class="fa-solid fa-school"></i>
-                <h3 class="counter" data-target="28">0</h3>
-                <p>Years of Excellence</p>
-            </div>
+          <div class="achievement-card">
+            <i class="fa-solid fa-laptop"></i>
+            <h3 class="counter" data-target="100">0</h3>
+            <p>Smart Classrooms</p>
+          </div>
 
-            <div class="achievement-card">
-                <i class="fa-solid fa-laptop"></i>
-                <h3 class="counter" data-target="100">0</h3>
-                <p>Smart Classrooms</p>
-            </div>
-
-            <div class="achievement-card">
-                <i class="fa-solid fa-award"></i>
-                <h3 class="counter" data-target="98">0</h3>
-                <p>Board Results</p>
-            </div>
-
+          <div class="achievement-card">
+            <i class="fa-solid fa-award"></i>
+            <h3 class="counter" data-target="98">0</h3>
+            <p>Board Results</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
                 TESTIMONIALS
 ========================================== -->
 
-<section class="testimonial-section">
-
-    <div class="container">
-
+    <section class="testimonial-section">
+      <div class="container">
         <!-- Heading -->
 
         <div class="section-heading">
+          <span class="section-tag">TESTIMONIALS</span>
 
-            <span class="section-tag">TESTIMONIALS</span>
+          <h2>What Parents Say About Us</h2>
 
-            <h2>What Parents Say About Us</h2>
-
-            <p>
-                Hear from our parents and students who have experienced
-                the excellence of Pavna School.
-            </p>
-
+          <p>
+            Hear from our parents and students who have experienced the
+            excellence of Pavna School.
+          </p>
         </div>
 
         <!-- Slider -->
 
         <div class="testimonial-slider">
+          <!-- Previous -->
 
-            <!-- Previous -->
+          <button class="testimonial-btn prev-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
 
-            <button class="testimonial-btn prev-btn">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
+          <!-- Testimonial Cards -->
 
-            <!-- Testimonial Cards -->
+          <div class="testimonial-wrapper">
+            <!-- Card 1 -->
 
-            <div class="testimonial-wrapper">
+            <div class="testimonial-card active">
+              <div class="testimonial-top">
+                <img src="images/parent1.jpg" alt="Parent" />
 
-                <!-- Card 1 -->
+                <div>
+                  <h4>Mrs. Priya Sharma</h4>
 
-                <div class="testimonial-card active">
-
-                    <div class="testimonial-top">
-
-                        <img src="images/parent1.jpg" alt="Parent">
-
-                        <div>
-
-                            <h4>Mrs. Priya Sharma</h4>
-
-                            <span>Parent of Grade 5 Student</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="stars">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-
-                    </div>
-
-                    <p>
-
-                        Pavna School has transformed my child into a confident
-                        learner. The teachers are caring, supportive and always
-                        encourage creativity.
-
-                    </p>
-
+                  <span>Parent of Grade 5 Student</span>
                 </div>
+              </div>
 
-                <!-- Card 2 -->
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
 
-                <div class="testimonial-card">
-
-                    <div class="testimonial-top">
-
-                        <img src="images/parent2.jpg" alt="Parent">
-
-                        <div>
-
-                            <h4>Mr. Amit Patil</h4>
-
-                            <span>Parent of Grade 8 Student</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="stars">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-
-                    </div>
-
-                    <p>
-
-                        The academic standards and extracurricular activities
-                        are outstanding. My daughter enjoys going to school
-                        every day.
-
-                    </p>
-
-                </div>
-
-                <!-- Card 3 -->
-
-                <div class="testimonial-card">
-
-                    <div class="testimonial-top">
-
-                        <img src="images/parent3.jpg" alt="Parent">
-
-                        <div>
-
-                            <h4>Mrs. Sneha Kulkarni</h4>
-
-                            <span>Parent of Grade 3 Student</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="stars">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-
-                    </div>
-
-                    <p>
-
-                        The smart classrooms, friendly teachers and safe
-                        environment make Pavna School the perfect place
-                        for children.
-
-                    </p>
-
-                </div>
-
+              <p>
+                Pavna School has transformed my child into a confident learner.
+                The teachers are caring, supportive and always encourage
+                creativity.
+              </p>
             </div>
 
-            <!-- Next -->
+            <!-- Card 2 -->
 
-            <button class="testimonial-btn next-btn">
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="images/parent2.jpg" alt="Parent" />
 
-                <i class="fa-solid fa-arrow-right"></i>
+                <div>
+                  <h4>Mr. Amit Patil</h4>
 
-            </button>
+                  <span>Parent of Grade 8 Student</span>
+                </div>
+              </div>
 
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                The academic standards and extracurricular activities are
+                outstanding. My daughter enjoys going to school every day.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="images/parent3.jpg" alt="Parent" />
+
+                <div>
+                  <h4>Mrs. Sneha Kulkarni</h4>
+
+                  <span>Parent of Grade 3 Student</span>
+                </div>
+              </div>
+
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                The smart classrooms, friendly teachers and safe environment
+                make Pavna School the perfect place for children.
+              </p>
+            </div>
+          </div>
+
+          <!-- Next -->
+
+          <button class="testimonial-btn next-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
 
         <!-- Dots -->
 
         <div class="testimonial-dots">
+          <span class="dot active"></span>
 
-            <span class="dot active"></span>
+          <span class="dot"></span>
 
-            <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
 
-            <span class="dot"></span>
+    <!-- ================================
+        LATEST NEWS SECTION
+================================ -->
+
+    <section class="news-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">LATEST NEWS</span>
+
+          <h2>Latest News & Events</h2>
+
+          <p>
+            Stay updated with the latest happenings, achievements, and exciting
+            events at Pavna School.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="news-card">
+              <div class="news-img">
+                <img src="images/event1.jpg" alt="Annual Day" />
+
+                <span class="news-date"> 15 Aug 2026 </span>
+              </div>
+
+              <div class="news-content">
+                <h4>Annual Day Celebration</h4>
+
+                <p>
+                  Students showcased their talents through dance, drama and
+                  music in our grand Annual Day celebration.
+                </p>
+
+                <a href="#">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="news-card">
+              <div class="news-img">
+                <img src="images/xyz3.jpg" alt="Science Fair" />
+
+                <span class="news-date"> 25 Jul 2026 </span>
+              </div>
+
+              <div class="news-content">
+                <h4>Science Exhibition</h4>
+
+                <p>
+                  Students displayed innovative science models and impressed
+                  visitors with their creativity.
+                </p>
+
+                <a href="#">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="news-card">
+              <div class="news-img">
+                <img src="images/xy3.jpg" alt="Sports" />
+
+                <span class="news-date"> 12 Jun 2026 </span>
+              </div>
+
+              <div class="news-content">
+                <h4>Annual Sports Meet</h4>
+
+                <p>
+                  A day full of excitement where students competed in athletics
+                  and team sports with great enthusiasm.
+                </p>
+
+                <a href="#">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+            ADMISSION CTA
+========================================== -->
+
+    <section class="admission-section">
+      <div class="container">
+        <div class="admission-box">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span class="admission-tag"> ADMISSIONS OPEN 2026–27 </span>
+
+              <h2>Shape Your Child's Future at Pavna School</h2>
+
+              <p>
+                Join a vibrant learning community where academic excellence,
+                innovation, and character development prepare students for a
+                successful future.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+              <a href="#" class="btn apply-btn"> Apply Now </a>
+              <br />
+              <br /><br />
+
+              <a href="#" class="btn contact-btn"> Contact Us </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                CONTACT SECTION
+========================================== -->
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">CONTACT US</span>
+
+          <h2>Get In Touch</h2>
+
+          <p>
+            We'd love to hear from you. Feel free to contact us for admissions,
+            queries, or any information regarding Pavna School.
+          </p>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <!-- Left -->
+
+          <div class="col-lg-5">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                  <h5>Address</h5>
+                  <p>
+                    Pavna School Mahavidhalaya, Aligarh  (UP) India
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                  <h5>Phone</h5>
+                  <p>+91 8006409329</p>
+                  <p>+91 8006409335</p>
+                  <p>+91 8006409336</p>
+                  +91 8006409344
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                  <h5>Email</h5>
+                  <p>info@pavnaschoolaligarh.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                    />
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+
+                <button class="btn send-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--====================================
+            FOOTER
+=====================================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <!-- About -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <h3 class="footer-logo">
+                    <i class="fa-solid fa-school"></i>
+                    Pavna School
+                </h3>
+
+                <p class="footer-about">
+                    Pavna School is committed to providing quality education,
+                    nurturing creativity, leadership, and lifelong learning in a
+                    safe and inspiring environment.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">About</a></li>
+
+                    <li><a href="#">Gallery</a></li>
+
+                    <li><a href="#">Admissions</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Academics -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4>Academics</h4>
+
+                <ul>
+
+                    <li><a href="#">Primary School</a></li>
+
+                    <li><a href="#">Secondary School</a></li>
+
+                    <li><a href="#">Library</a></li>
+
+                    <li><a href="#">Sports</a></li>
+
+                    <li><a href="#">Events</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4>Contact</h4>
+
+                <ul class="footer-contact">
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                       Aligarh ,UP
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 98765 43210
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                       info@pavnaschoolaligarh.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Pavna School. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed & Developed by <strong>Sanchit Wakpanjar</strong>
+            </p>
 
         </div>
 
     </div>
 
-</section>
-
-
-
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
