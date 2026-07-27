@@ -1,0 +1,94 @@
+/*==================================
+        CONTACT SECTION
+==================================*/
+
+.contact-section {
+  padding: 100px 0;
+  background: #f8fbff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: 0.35s;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.contact-item h5 {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #64748b;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-control {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #dbe4f0;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border-color: #2563eb;
+}
+
+.send-btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #1d4ed8;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-form {
+    padding: 30px;
+  }
+}

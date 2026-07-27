@@ -1,0 +1,247 @@
+/* ==========================================
+            TESTIMONIAL SECTION
+========================================== */
+
+.testimonial-section {
+  padding: 100px 0;
+  background: #f8fbff;
+  overflow: hidden;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  max-width: 700px;
+  margin: auto;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ==========================================
+                SLIDER
+========================================== */
+
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ==========================================
+            BUTTONS
+========================================== */
+
+.testimonial-btn {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  color: #2563eb;
+  cursor: pointer;
+  transition: 0.35s;
+  flex-shrink: 0;
+}
+
+.testimonial-btn:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+            WRAPPER
+========================================== */
+
+.testimonial-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ==========================================
+            CARD
+========================================== */
+
+.testimonial-card {
+  width: 360px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  transition: 0.4s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.18);
+}
+
+/* ==========================================
+            TOP
+========================================== */
+
+.testimonial-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.testimonial-top img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2563eb;
+}
+
+.testimonial-top h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.testimonial-top span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* ==========================================
+            STARS
+========================================== */
+
+.stars {
+  margin-bottom: 18px;
+}
+
+.stars i {
+  color: #facc15;
+  margin-right: 4px;
+  font-size: 1rem;
+}
+
+/* ==========================================
+            REVIEW
+========================================== */
+
+.testimonial-card p {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ==========================================
+            DOTS
+========================================== */
+
+.testimonial-dots {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  width: 35px;
+  border-radius: 30px;
+  background: #2563eb;
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .testimonial-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-slider {
+    gap: 10px;
+  }
+
+  .testimonial-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-card {
+    padding: 28px;
+  }
+
+  .testimonial-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-section {
+    padding: 70px 0;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-heading p {
+    font-size: 0.95rem;
+  }
+}

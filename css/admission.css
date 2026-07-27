@@ -1,0 +1,177 @@
+/*====================================
+        ADMISSION CTA
+====================================*/
+
+.admission-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.admission-box {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  border-radius: 30px;
+
+  padding: 70px;
+
+  color: #fff;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.25);
+}
+
+/* Decorative Circles */
+
+.admission-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+
+  height: 260px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 50%;
+
+  top: -100px;
+
+  right: -60px;
+}
+
+.admission-box::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+
+  height: 180px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 50%;
+
+  bottom: -80px;
+
+  left: -60px;
+}
+
+.admission-tag {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 50px;
+
+  margin-bottom: 20px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.admission-box h2 {
+  font-size: 2.8rem;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.admission-box p {
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+
+  opacity: 0.95;
+
+  max-width: 700px;
+}
+
+/* Buttons */
+
+.apply-btn {
+  background: #fff;
+
+  color: #2563eb;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  margin-right: 15px;
+
+  transition: 0.35s;
+}
+
+.apply-btn:hover {
+  transform: translateY(-4px);
+
+  background: #f3f4f6;
+
+  color: #2563eb;
+}
+
+.contact-btn {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+
+  color: #fff;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  transition: 0.35s;
+}
+
+.contact-btn:hover {
+  background: #fff;
+
+  color: #2563eb;
+
+  transform: translateY(-4px);
+}
+
+@media (max-width: 992px) {
+  .admission-box {
+    padding: 50px 35px;
+
+    text-align: center;
+  }
+
+  .admission-box h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .admission-box {
+    padding: 40px 25px;
+  }
+
+  .admission-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .apply-btn,
+  .contact-btn {
+    display: block;
+
+    width: 100%;
+
+    margin: 12px 0;
+  }
+}
